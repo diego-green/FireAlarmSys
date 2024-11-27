@@ -1,0 +1,374 @@
+
+*** Running vivado
+    with args -log Top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
+
+
+ECHO is off.
+ECHO is off.
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source Top.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 449.141 ; gain = 163.602
+Command: read_checkpoint -auto_incremental -incremental C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/utils_1/imports/synth_1/Top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/utils_1/imports/synth_1/Top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top Top -part xc7a35ticpg236-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Device 21-403] Loading part xc7a35ticpg236-1L
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 24900
+WARNING: [Synth 8-6901] identifier 'WIDTH' is used before its declaration [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/imports/new/Nbit_MOSI_SPI.v:3]
+WARNING: [Synth 8-6901] identifier 'WIDTH' is used before its declaration [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/imports/new/Nbit_MOSI_SPI_Buffer.v:3]
+WARNING: [Synth 8-6901] identifier 'N' is used before its declaration [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/imports/new/Nbit_MOSI_SPI_Buffer.v:3]
+WARNING: [Synth 8-6901] identifier 'N' is used before its declaration [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/imports/new/Nbit_MOSI_SPI_Buffer.v:4]
+WARNING: [Synth 8-6901] identifier 'WIDTH' is used before its declaration [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/imports/new/Nbit_MOSI_SPI_Buffer.v:8]
+INFO: [Synth 8-11241] undeclared symbol 's_start_mosi', assumed default net type 'wire' [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/imports/new/Nbit_MOSI_SPI_Buffer_Combined.v:32]
+WARNING: [Synth 8-6901] identifier 'WIDTH' is used before its declaration [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/imports/new/Nbit_MOSI_SPI_Buffer_Combined.v:3]
+WARNING: [Synth 8-6901] identifier 'N' is used before its declaration [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/imports/new/Nbit_MOSI_SPI_Buffer_Combined.v:3]
+WARNING: [Synth 8-6901] identifier 'N' is used before its declaration [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/imports/new/Nbit_MOSI_SPI_Buffer_Combined.v:4]
+WARNING: [Synth 8-6901] identifier 'N_COLOR_BITS' is used before its declaration [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/imports/new/OLED_interface.v:29]
+WARNING: [Synth 8-6901] identifier 'N_COLOR_BITS' is used before its declaration [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/imports/new/OLED_interface.v:30]
+WARNING: [Synth 8-6901] identifier 'NUM_ASCII_COL' is used before its declaration [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/imports/new/OLED_interface.v:31]
+WARNING: [Synth 8-6901] identifier 'NUM_ASCII_ROW' is used before its declaration [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/imports/new/OLED_interface.v:31]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'SevSeg' [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/new/SevSeg.v:62]
+INFO: [Synth 8-9937] previous definition of design element 'SevSeg' is here [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/new/SevSeg.v:42]
+WARNING: [Synth 8-6901] identifier 'ASCII_COL_SIZE' is used before its declaration [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/new/Top.v:30]
+WARNING: [Synth 8-6901] identifier 'ASCII_ROW_SIZE' is used before its declaration [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/new/Top.v:31]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1265.016 ; gain = 410.148
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top' [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/new/Top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Debounce' [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/new/Debounce.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Debounce' (0#1) [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/new/Debounce.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ClockDivider' [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/new/ClockDivider.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClockDivider' (0#1) [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/new/ClockDivider.v:23]
+INFO: [Synth 8-6157] synthesizing module 'FSM' [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/new/FSM.v:22]
+WARNING: [Synth 8-567] referenced signal 'reset' should be on the sensitivity list [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/new/FSM.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'FSM' (0#1) [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/new/FSM.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Countdown' [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/new/Countdown.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Countdown' (0#1) [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/new/Countdown.v:23]
+INFO: [Synth 8-6157] synthesizing module 'BuzzerControl' [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/new/BuzzerControl.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/new/BuzzerControl.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'BuzzerControl' (0#1) [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/new/BuzzerControl.v:23]
+INFO: [Synth 8-6157] synthesizing module 'SevSeg' [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/new/SevSeg.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'SevSeg' (0#1) [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/new/SevSeg.v:43]
+INFO: [Synth 8-6157] synthesizing module 'OLED_interface' [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/imports/new/OLED_interface.v:25]
+	Parameter WIDTH bound to: 8 - type: integer 
+	Parameter N bound to: 8 - type: integer 
+	Parameter SCLK_DIVIDER bound to: 20 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Nbit_MOSI_SPI_Buffer_Combined' [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/imports/new/Nbit_MOSI_SPI_Buffer_Combined.v:1]
+	Parameter WIDTH bound to: 8 - type: integer 
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Nbit_MOSI_SPI_Buffer' [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/imports/new/Nbit_MOSI_SPI_Buffer.v:1]
+	Parameter WIDTH bound to: 8 - type: integer 
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Nbit_MOSI_SPI_Buffer' (0#1) [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/imports/new/Nbit_MOSI_SPI_Buffer.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Nbit_MOSI_SPI' [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/imports/new/Nbit_MOSI_SPI.v:1]
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Nbit_MOSI_SPI' (0#1) [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/imports/new/Nbit_MOSI_SPI.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Nbit_MOSI_SPI_Buffer_Combined' (0#1) [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/imports/new/Nbit_MOSI_SPI_Buffer_Combined.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/imports/new/clock_divider.v:3]
+	Parameter DVSR bound to: 20 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (0#1) [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/imports/new/clock_divider.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ascii_font_8x8' [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/imports/new/ascii_font_8x8.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ascii_font_8x8' (0#1) [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/imports/new/ascii_font_8x8.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/imports/new/OLED_interface.v:189]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/imports/new/OLED_interface.v:168]
+INFO: [Synth 8-6155] done synthesizing module 'OLED_interface' (0#1) [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/imports/new/OLED_interface.v:25]
+WARNING: [Synth 8-7071] port 'o_MOSI_FINAL_BIT' of module 'OLED_interface' is unconnected for instance 'oled_inst' [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/new/Top.v:227]
+WARNING: [Synth 8-7071] port 'o_MOSI_FINAL_BYTE' of module 'OLED_interface' is unconnected for instance 'oled_inst' [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/new/Top.v:227]
+WARNING: [Synth 8-7023] instance 'oled_inst' of module 'OLED_interface' has 17 connections declared, but only 15 given [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/new/Top.v:227]
+INFO: [Synth 8-6155] done synthesizing module 'Top' (0#1) [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/new/Top.v:1]
+WARNING: [Synth 8-7137] Register stable_state_reg in module Debounce has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/new/Debounce.v:36]
+WARNING: [Synth 8-7137] Register clean_signal_reg in module Debounce has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/new/Debounce.v:37]
+WARNING: [Synth 8-7137] Register s_DC_reg_reg in module Nbit_MOSI_SPI_Buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/imports/new/Nbit_MOSI_SPI_Buffer.v:57]
+WARNING: [Synth 8-7137] Register s_N_transmit_reg_reg in module Nbit_MOSI_SPI_Buffer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/imports/new/Nbit_MOSI_SPI_Buffer.v:63]
+WARNING: [Synth 8-7137] Register s_MOSI_LSB_reg in module Nbit_MOSI_SPI has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/imports/new/Nbit_MOSI_SPI.v:49]
+WARNING: [Synth 8-7137] Register current_digit_reg in module Top has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/sources_1/new/Top.v:156]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1366.207 ; gain = 511.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1366.207 ; gain = 511.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1366.207 ; gain = 511.340
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 1366.207 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/constrs_1/new/Constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'leds[2]'. [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/constrs_1/new/Constraints.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/constrs_1/new/Constraints.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'leds[1]'. [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/constrs_1/new/Constraints.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/constrs_1/new/Constraints.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'leds[0]'. [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/constrs_1/new/Constraints.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/constrs_1/new/Constraints.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'leds[0]'. [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/constrs_1/new/Constraints.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/constrs_1/new/Constraints.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'leds[1]'. [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/constrs_1/new/Constraints.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/constrs_1/new/Constraints.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'leds[2]'. [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/constrs_1/new/Constraints.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/constrs_1/new/Constraints.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/constrs_1/new/Constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.srcs/constrs_1/new/Constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1429.555 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1429.555 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1429.555 ; gain = 574.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticpg236-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1429.555 ; gain = 574.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1429.555 ; gain = 574.688
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'FSM'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              100
+                Check_sw |                              001 |                              101
+                    fire |                              010 |                              000
+                   smoke |                              011 |                              001
+                      CO |                              100 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'FSM'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1429.555 ; gain = 574.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 3     
+	   2 Input   27 Bit       Adders := 1     
+	   2 Input   20 Bit       Adders := 5     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 3     
+	   2 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
++---Registers : 
+	              768 Bit    Registers := 1     
+	               64 Bit    Registers := 2     
+	               32 Bit    Registers := 2     
+	               27 Bit    Registers := 1     
+	               20 Bit    Registers := 5     
+	                8 Bit    Registers := 9     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 5     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 24    
++---Muxes : 
+	   2 Input  768 Bit        Muxes := 1     
+	   8 Input  768 Bit        Muxes := 1     
+	   4 Input  111 Bit        Muxes := 1     
+	   2 Input   64 Bit        Muxes := 3     
+	   8 Input   64 Bit        Muxes := 2     
+	   2 Input   63 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 5     
+	   8 Input   32 Bit        Muxes := 1     
+	   2 Input   27 Bit        Muxes := 1     
+	   2 Input   20 Bit        Muxes := 10    
+	   4 Input   16 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 10    
+	   8 Input    8 Bit        Muxes := 5     
+	   3 Input    8 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 3     
+	   8 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 5     
+	   8 Input    4 Bit        Muxes := 1     
+	   5 Input    4 Bit        Muxes := 2     
+	   4 Input    4 Bit        Muxes := 1     
+	   5 Input    3 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 6     
+	   5 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 57    
+	   4 Input    1 Bit        Muxes := 4     
+	   3 Input    1 Bit        Muxes := 1     
+	   5 Input    1 Bit        Muxes := 1     
+	   8 Input    1 Bit        Muxes := 15    
+	  64 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 1429.555 ; gain = 574.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:40 . Memory (MB): peak = 1429.555 ; gain = 574.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1429.555 ; gain = 574.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:41 . Memory (MB): peak = 1429.555 ; gain = 574.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1429.555 ; gain = 574.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1429.555 ; gain = 574.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1429.555 ; gain = 574.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1429.555 ; gain = 574.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:47 ; elapsed = 00:00:47 . Memory (MB): peak = 1429.555 ; gain = 574.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:47 ; elapsed = 00:00:47 . Memory (MB): peak = 1429.555 ; gain = 574.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    68|
+|3     |LUT1   |     9|
+|4     |LUT2   |   706|
+|5     |LUT3   |    73|
+|6     |LUT4   |   119|
+|7     |LUT5   |   146|
+|8     |LUT6   |   402|
+|9     |MUXF7  |    36|
+|10    |FDCE   |  1045|
+|11    |FDPE   |    12|
+|12    |FDRE   |     9|
+|13    |LDC    |     5|
+|14    |IBUF   |     7|
+|15    |OBUF   |    22|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:47 ; elapsed = 00:00:47 . Memory (MB): peak = 1429.555 ; gain = 574.688
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:36 ; elapsed = 00:00:45 . Memory (MB): peak = 1429.555 ; gain = 511.340
+Synthesis Optimization Complete : Time (s): cpu = 00:00:47 ; elapsed = 00:00:47 . Memory (MB): peak = 1429.555 ; gain = 574.688
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1429.555 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 109 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1429.555 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5 instances were transformed.
+  LDC => LDCE: 5 instances
+
+Synth Design complete | Checksum: f9ab19d3
+INFO: [Common 17-83] Releasing license: Synthesis
+54 Infos, 31 Warnings, 7 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 1429.555 ; gain = 956.547
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/victor.hernandez25/Downloads/FPGA_SSD1331_OLED_Interface-main/Fire_Alarm_System/Fire_Alarm_System.runs/synth_1/Top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_utilization_synth.rpt -pb Top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 27 10:26:50 2024...
